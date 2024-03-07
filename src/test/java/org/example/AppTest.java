@@ -7,8 +7,8 @@ import junit.framework.TestSuite;
 /**
  * Unit test for simple App.
  */
-public class AppTest 
-    extends TestCase
+public class AppTest
+        extends TestCase
 {
     /**
      * Create the test case
@@ -33,6 +33,11 @@ public class AppTest
      */
     public void testApp()
     {
-        assertTrue( true );
+        MyStack<Integer> myStack = new MyStack<>();
+
+        myStack.push(0);
+        assertTrue(myStack.get(0).equals(0));
+        Integer x = myStack.pop();
+        assertTrue(x.equals(0));
     }
 }
