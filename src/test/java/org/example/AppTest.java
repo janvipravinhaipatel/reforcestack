@@ -36,7 +36,7 @@ public class AppTest
         MyStack<Integer> myStack = new MyStack<>();
 
         myStack.push(0);
-        assertTrue(myStack.get(0).equals(0));
+        assertTrue(myStack.top().equals(0));
         Integer x = myStack.pop();
         assertTrue(x.equals(0));
     }
